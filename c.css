@@ -1,0 +1,172 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Roboto;   
+}
+nav {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 500;
+    box-shadow: 0 10px 10px white;
+}
+
+nav ul {
+    padding: 1.3rem;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: #5B7343;
+    padding: 5px 10px;
+    margin: 10px;
+   
+    border-radius: 15px;
+    transition: all 0.45s ease;
+}
+
+nav a:hover {
+ text-shadow: 0 5px 10px  #ACBF84 ;
+}
+
+#home { 
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+#home img {
+    width: 300px;
+}
+
+#home #imghome {
+    width: 300px;
+    height: 300px;
+
+    overflow: hidden;
+    margin: 0vh auto;
+    margin-top: 30vh;
+    transform: translatey(-10%);
+}
+
+#home h1 {
+    font-size: 3rem;
+    color: #ACBF84;
+    padding-top: 30px;
+}
+#home p {
+    padding-top: 20px;
+}
+
+#about h2, #skills h2, #certificates h2 ,#projects h2 ,#contact h2 {
+    color:#5B7343;
+    font-size: 2rem;
+    padding: 1rem 0;
+    padding-top: 8rem;
+}
+
+#about, #skills , #certificates , #projects, #contact , #home {
+    max-width: 800px;
+    padding: 30px;
+    margin: 0 auto;
+
+}
+
+#about p {
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+ #certificate {
+    display:flex;
+    flex-wrap:wrap;
+    align-items: flex-end;
+    justify-content: center; /* centers items evenly */
+    gap: 20px; /* space between items */
+ }
+  #contact a {
+    text-decoration: none;
+    color: blueviolet;
+
+  }
+
+  #contact h2 {
+    padding-top: 0%;
+  }
+
+  #color {
+    background-color: #ECF2D8;
+    padding: 0;
+    margin: 0; 
+  }
+
+ #certificates img {
+    height: 200px;
+    border-radius: 9px;
+ }
+
+ .imgc {
+    border: 5px solid #ccc;
+    overflow: hidden;
+   
+    background-color: #ccc;
+    border-radius: 9px; 
+
+ }
+ 
+ .skill-card {
+    background-color:#ccc;
+    border-radius: 9px;
+    padding: 1rem;
+    width: 200px;
+    height: 150px;
+ }
+  .skill-card li {
+    list-style-type: none;
+  }
+
+.skill-card h3 {
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+  }
+
+.skills-grid {
+display: flex;
+flex-wrap: wrap;
+gap: 9px;    align-items: flex-end;
+    justify-content: center; /* centers items evenly */
+ }
+nav a.active {
+   box-shadow: inset 0 0 19px #ACBF84;
+}
+
+ 
+@media (max-width: 800px) {
+  /* CSS styles for screens up to 600px wide */
+#home h1 {
+    font-size: 2rem;
+}
+#home img {
+    width: 200px;
+    
+}
+#home #imghome {
+    width: 200px;
+    height: 200px;
+}
+
+#home h1 {
+    padding-top: 0rem;
+}
+
+#home p {
+    font-size: 1rem;
+}
+}
